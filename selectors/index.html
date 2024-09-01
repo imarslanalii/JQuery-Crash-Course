@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <title>JQuery Crash Cousre | Selectors </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            line-height: 1.5em;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #000;
+            margin-bottom: 10px;
+        }
+        #container{
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JQuery Crash Course</h1>
+    </header>
+    <div id="container">
+        <h1 id="heading1">Heading One</h1>
+        <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, soluta. Similique nihil ad laboriosam ea sapiente officia nisi ipsum natus distinctio voluptatibus commodi voluptate iure numquam quos nesciunt, amet Lorem ipsum <span>dolor sit amet consectetur adipisicing elit</span> dolor sit amet consectetur adipisicing elit. Numquam fugit impedit blanditiis enim quis praesentium nobis hic dolorem, distinctio modi autem dicta ea doloremque voluptates. Blanditiis voluptatem qui eius impedit?</p>
+
+        <h1 class="heading2">Heading Two</h1>
+        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, soluta. Similique nihil ad laboriosam ea sapiente officia nisi ipsum natus distinctio voluptatibus commodi voluptate iure numquam quos nesciunt, amet Lorem ipsum <span>dolor sit amet consectetur adipisicing elit</span> dolor sit amet consectetur adipisicing elit. Numquam fugit impedit blanditiis enim quis praesentium nobis hic dolorem, distinctio modi autem dicta ea doloremque voluptates. Blanditiis voluptatem qui eius impedit?</p>
+
+        <ul id="list">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+
+        <input type="button" value="button 1">
+        <input type="submit" value="submit">
+        <input type="text">
+
+        <a href="http://google.com">Google</a>
+        <a href="http://youtube.com">Youtube</a>
+    </div>
+    <script>
+        //  $('h1').hide();
+        // $('h1#heading1').hide();
+        // $('h1.heading2').hide();
+
+        // $('p span').css('color', 'red');
+        // $('span').css('color', 'red');
+
+        $('ul#list li:first').css('color', 'red');
+        $('ul#list li:last').css('color', 'green');
+        $('ul#list li:even').css('background-color', 'yellow');
+        $('ul#list li:odd').css('background-color', '#ccc');
+        $('ul#list li:nth-child(3n)').css('list-style', 'none');
+
+        $(':text').hide();
+
+        $('[href]').css('color','red')
+        $('a[href="http://youtube.com"]').css('color','green')
+        
+        // $('*').hide()
+    </script>
+</body>
+</html>
