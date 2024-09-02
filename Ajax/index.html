@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=10">
-    <title>JQuery Crash Cousre | DOM Manipulation </title>
+    <title>JQuery Crash Cousre | Ajax </title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <style>
         body{
@@ -29,11 +29,15 @@
 </head>
 <body>
     <header>
-        <h1>JQuery Crash Course</h1>
+        <h1>JQuery Crash Course | Ajax</h1>
     </header>
     <div id="container">
+        <div id="result"></div>
     </div>
     <script>
+        $(document).ready(function(){
+            $('result').load('test.html')
+        })
     </script>
 </body>
 </html>
